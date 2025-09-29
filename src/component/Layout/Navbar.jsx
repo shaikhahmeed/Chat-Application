@@ -13,7 +13,7 @@ const Navbar = () => {
             <Link className='flex items-center gap-2 justify-center text-lg'> <span><IoChatbox /></span> Chat</Link>
             <Link to={"/group"} className='flex items-center gap-2 justify-center text-lg'> <span><FaUserGroup /></span> Group</Link>
          </div>
-         <div className='flex gap-2.5 items-center justify-center mt-auto text-lg'>
+         <div className='flex gap-2.5 items-center justify-center mt-auto mr-auto text-lg'>
             <Link to={"/login"}>log out</Link>
             <Link to={"/login"}><IoExit /></Link>
          </div>

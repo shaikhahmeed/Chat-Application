@@ -7,12 +7,12 @@ import { BsThreeDotsVertical } from 'react-icons/bs'
 const Home = () => {
   return (
     <>
-    <div className='flex w-full'>
+    <div className='flex w-full h-screen'>
       <div className='w-1/4'>
         <ChatList/>
       </div>
-                            {/* chatbox */}
-      <div className='w-3/4'>
+      {/* chatbox */}
+      <div className='w-3/4 overflow-hidden'>
         {/* <p className='text-secondary text-lg font-medium flex justify-center items-center'>Select a freind for start your conversation</p> */}
         <div className='pb-3 shadow-xl flex justify-between items-center mr-3'>
           <div className='flex items-center gap-2'>
@@ -34,6 +34,7 @@ const Home = () => {
             <p className=' bg-slate-200 rounded-xl text-brand px-4 py-2 font-medium w-fit max-w-4/5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, provident.</p>
             {/* receiver */}
             <p className='bg-slate-200 rounded-xl ml-auto text-brand px-4 py-2 font-medium w-fit max-w-4/5'>Lorem ipsum dolor sit amet.</p>
+            <input type="text" placeholder='Chat here' className='outline-0 items-end'/>
         </div>
       </div>
     </div>
