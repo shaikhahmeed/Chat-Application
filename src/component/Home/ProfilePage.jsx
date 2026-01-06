@@ -1,13 +1,13 @@
 import React from 'react'
 import Profile from './Profile'
 
-const MainPage = () => {
+const ProfilePage = () => {
   return (
     <div>
-        <div className='mb-8 mt-5'>
+        <div className='mt-5'>
             <Profile/>
         </div>
-     <div className="container m-auto px-4 py-8 max-w-md">
+     <div className="m-auto px-4 py-8 max-w-md">
       <div className="grid grid-cols-2 gap-8"> 
       <div className="bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg p-6 shadow-lg text-white">
         <a href="#" className="text-xl font-semibold mb-2 cursor-pointer">User List</a>
@@ -33,4 +33,4 @@ const MainPage = () => {
   )
 }
 
-export default MainPage
+export default ProfilePage

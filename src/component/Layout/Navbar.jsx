@@ -9,13 +9,17 @@ const Navbar = () => {
     <nav className='h-screen shadow-xl pr-6 flex flex-col w-72'>
          <p className='text-3xl font-bold text-indigo-950 mb-12'>ChatApp</p>
          <div className='flex flex-col gap-3'>
-            <Link className='bg-indigo-950 text-lg p-2.5 rounded-xl text-white flex items-center gap-2 justify-center'> <span><FaRegUser /></span> Profile</Link>
-            <Link to={"/home"} className='flex items-center gap-2 justify-center text-lg'> <span><IoChatbox /></span> Chat</Link>
+            <Link to={"pp"} className='bg-indigo-950 text-lg p-2.5 rounded-xl text-white flex items-center gap-2 justify-center'> <span><FaRegUser /></span> Profile</Link>
+            <Link to={"/chat"} className='flex items-center gap-2 justify-center text-lg'> <span><IoChatbox /></span> Chat</Link>
             <Link to={"/group"} className='flex items-center gap-2 justify-center text-lg'> <span><FaUserGroup /></span> Group</Link>
          </div>
-         <div className='flex gap-2.5 items-center justify-center mt-auto mr-auto text-lg'>
-            <Link to={"/login"}>log out</Link>
-            <Link to={"/login"}><IoExit /></Link>
+         <div className='flex gap-2.5 text-center items-center mt-auto text-lg p-2'>
+            <div>
+              <Link to={"/login"}>log out</Link>
+            </div>
+           <div className='mt-1'>
+             <Link to={"/login"}><IoExit /></Link>
+           </div>
          </div>
     </nav>
   )

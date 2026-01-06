@@ -3,9 +3,9 @@ import { Routes, Route } from "react-router";
 import Layout from "./component/Layout/Layout";
 import Registration from "./pages/Registration";
 import Login from "./pages/Login";
-import MainPage from "./component/Home/MainPage";
 import Group from "./pages/Group";
-import Home from "./pages/Home";
+import ProfilePage from "./component/Home/ProfilePage";
+import ChatPage from "./pages/ChatPage";
 
 function App() {
 
@@ -15,10 +15,10 @@ function App() {
       <Routes>
         <Route path="/sign_up" element={<Registration/>}/>
         <Route path="/login" element={<Login/>}/>
-        {/* <Route path="/profile" element={</>}/> */}
         <Route path="" element={<Layout/>}>
-          <Route index element={<MainPage/>}/>
-          <Route path="/home" element={<Home/>}/>
+          <Route index element={<ProfilePage/>}/>
+          <Route path="pp" element={<ProfilePage/>}/>
+          <Route path="/chat" element={<ChatPage/>}/>
           <Route path="/group" element={<Group/>}/>
         </Route>
       </Routes>

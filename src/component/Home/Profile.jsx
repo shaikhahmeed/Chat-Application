@@ -3,7 +3,7 @@ import React from 'react'
 const Profile = () => {
   return (
     <div className='flex gap-2 justify-center items-center'>
-        <div className='max-w-72'>
+        <div className='max-w-60'>
             <img src="/profile.png" alt="profile" className='w-fit'/>
         </div>
         <div className='flex flex-col gap-2'>
